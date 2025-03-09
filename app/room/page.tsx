@@ -49,7 +49,7 @@ export default function Home() {
       </div> */}
 
       <div className="w-full max-w-md flex flex-col items-center gap-8">
-        <h1 className="text-7xl font-bold text-[#06D6A0] dark:text-light-yellow tracking-tight pt-20">Sneak</h1>
+        <h1 className="text-7xl font-bold text-[#06D6A0] dark:text-light-yellow tracking-tight pt-28">Sneak</h1>
 
         <div className="w-full space-y-4">
           <div className="glass p-6 rounded-xl w-full space-y-4 dark:bg-transparent">

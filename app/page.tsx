@@ -21,17 +21,17 @@ export default function Home() {
     </div> */}
 
     <div className="w-full flex flex-col items-center gap-8">
-      <h1 className="text-8xl md:text-9xl font-bold text-[#06D6A0] dark:text-light-yellow tracking-tight ">Sneak</h1>
+      <h1 className="text-9xl md:text-[11rem] font-bold text-[#06D6A0] dark:text-light-yellow tracking-tight ">Sneak</h1>
 
       <Button
               onClick={redirectRoom}
-              className="w-1/2 bg-black text-light-yellow hover:bg-black/90 dark:bg-white dark:text-emerald dark:hover:bg-white/90 rounded-full"
+              className="w-3/4 bg-black text-light-yellow hover:bg-black/90 dark:bg-white dark:text-emerald dark:hover:bg-white/90 rounded-full "
             >
               Room Chat
             </Button>
           </div>
         
-          <div className=" text-[0.69rem] text-gray-800 font-bold flex   align-middle items-center justify-center pt-3 text-transparent/50 gap-2">
+          <div className=" text-[0.69rem] text-gray-800 font-bold flex   align-middle items-center justify-center pt-3 text-transparent/50 gap-2 mt-2">
 <div>
 <a href="https://x.com/Waliilaww" className="hover:text-black">Twitter</a>
 </div>
