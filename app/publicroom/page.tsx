@@ -13,9 +13,7 @@ export default function Home() {
   const [username, setUsername] = useState("")
 
   const handleJoinRoom = () => {
-    if (roomCode && username) {
-      router.push(`/chat?room=${roomCode}&username=${username}`)
-    }
+router.push('/publicchat')
   }
   return (
     <main className="flex  flex-col items-center justify-center p-4 relative dark:bg-[#06D6A0] overflow-hidden">

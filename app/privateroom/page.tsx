@@ -16,7 +16,7 @@ export default function Home() {
 
   const handleJoinRoom = () => {
     if (roomCode && username) {
-      router.push(`/chat?room=${roomCode}&username=${username}`)
+      router.push(`/privatechat?room=${roomCode}&username=${username}`)
     }
   }
 
@@ -26,7 +26,7 @@ export default function Home() {
     setRoomCode(newRoomCode)
 
     if (username) {
-      router.push(`/chat?room=${newRoomCode}&username=${username}`)
+      router.push(`/privatechat?room=${newRoomCode}&username=${username}`)
     }
   }
 
