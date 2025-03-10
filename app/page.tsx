@@ -27,15 +27,15 @@ export default function Home() {
               onClick={redirectRoom}
               className="w-3/4 bg-black text-light-yellow hover:bg-black/90 dark:bg-white dark:text-emerald dark:hover:bg-white/90 rounded-full "
             >
-              Room Chat
+              Private Chat
             </Button>
           </div>
-        <div className="mt-3">
+        <div className="mt-3 w-full flex item-center justify-center">
         <Button
               onClick={redirectRoom}
               className="w-3/4 bg-black text-light-yellow hover:bg-black/90 dark:bg-white dark:text-emerald dark:hover:bg-white/90 rounded-full "
             >
-              Room Chat
+              Public Chat
             </Button>
         </div>
 
