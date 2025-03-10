@@ -6,8 +6,11 @@ import { useRouter } from "next/navigation"
 export default function Home() {
   const router = useRouter()
 
-  const redirectRoom = () => {
-    router.push('/room');
+  const publicRoom = () => {
+    router.push('/publicroom');
+  }
+  const privateRoom =() => {
+    router.push('/privateroom')
   }
 
   return(
@@ -24,7 +27,7 @@ export default function Home() {
       <h1 className="text-9xl md:text-[11rem] font-bold text-[#06D6A0] dark:text-light-yellow tracking-tight ">Sneak</h1>
 
       <Button
-              onClick={redirectRoom}
+              onClick={privateRoom}
               className="w-3/4 bg-black text-light-yellow hover:bg-black/90 dark:bg-white dark:text-emerald dark:hover:bg-white/90 rounded-full "
             >
               Private Chat
@@ -32,7 +35,7 @@ export default function Home() {
           </div>
         <div className="mt-3 w-full flex item-center justify-center">
         <Button
-              onClick={redirectRoom}
+              onClick={publicRoom}
               className="w-3/4 bg-black text-light-yellow hover:bg-black/90 dark:bg-white dark:text-emerald dark:hover:bg-white/90 rounded-full "
             >
               Public Chat
