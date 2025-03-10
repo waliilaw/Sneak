@@ -30,7 +30,15 @@ export default function Home() {
               Room Chat
             </Button>
           </div>
-        
+        <div className="mt-3">
+        <Button
+              onClick={redirectRoom}
+              className="w-3/4 bg-black text-light-yellow hover:bg-black/90 dark:bg-white dark:text-emerald dark:hover:bg-white/90 rounded-full "
+            >
+              Room Chat
+            </Button>
+        </div>
+
           <div className=" text-[0.69rem] text-gray-800 font-bold flex   align-middle items-center justify-center pt-3 text-transparent/50 gap-2 mt-2">
 <div>
 <a href="https://x.com/Waliilaww" className="hover:text-black">Twitter</a>
