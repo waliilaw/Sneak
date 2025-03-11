@@ -1,11 +1,12 @@
 'use client'
+
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation"
+import { useState } from "react"
 
 export default function Home() {
   const router = useRouter()
-
   const publicRoom = () => {
     router.push('/publicroom');
   }
@@ -13,8 +14,9 @@ export default function Home() {
     router.push('/privateroom')
   }
 
-  return(
 
+
+  return(
     <main className="flex min-h-screen flex-col items-center justify-center p-4 relative dark:bg-[#06D6A0] overflow-hidden">
     <div className="absolute top-4 right-4">
       <ThemeToggle />

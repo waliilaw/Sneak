@@ -1,6 +1,8 @@
 {
-  "/publicchat/page": "app/publicchat/page.js",
-  "/page": "app/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/publicroom/page": "app/publicroom/page.js",
-  "/privateroom/page": "app/privateroom/page.js"
+  "/page": "app/page.js",
+  "/privateroom/page": "app/privateroom/page.js",
+  "/publicchat/page": "app/publicchat/page.js"
 }
