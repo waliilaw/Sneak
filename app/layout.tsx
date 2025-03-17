@@ -8,7 +8,7 @@ import { Toaster } from "@/components/ui/toaster"
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import Loading from "@/components/loading"
-import { metadata } from "./metadata"
+
 
 const inter = Inter({ subsets: ["latin"] })
 
