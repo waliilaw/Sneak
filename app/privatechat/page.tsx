@@ -6,6 +6,7 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ArrowLeft, Send, Smile, Paperclip, MoreVertical, Phone, Video } from "lucide-react"
+import ChatRoom from '@/components/ChatRoom'
 
 type Message = {
   id: string
@@ -124,27 +125,8 @@ export default function ChatPage() {
         </div>
       </header>
 
-      {/* Messages */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-4">
-        {messages.map((msg) => (
-          <div key={msg.id} className={`flex ${msg.isCurrentUser ? "justify-end" : "justify-start"}`}>
-            <div
-              className={`max-w-[80%] rounded-2xl p-3 ${
-                msg.isCurrentUser
-                  ? "bg-emerald text-white dark:bg-light-yellow dark:text-emerald rounded-tr-none"
-                  : "glass rounded-tl-none"
-              }`}
-            >
-              {!msg.isCurrentUser && (
-                <p className="text-xs font-medium text-emerald dark:text-light-yellow mb-1">{msg.sender}</p>
-              )}
-              <p className="break-words">{msg.content}</p>
-              <p className="text-xs text-right mt-1 opacity-70">{formatTime(msg.timestamp)}</p>
-            </div>
-          </div>
-        ))}
-        <div ref={messagesEndRef} />
-      </div>
+      {/* Chat Room */}
+      <ChatRoom />
 
       {/* Message Input */}
       <div className="glass p-4">

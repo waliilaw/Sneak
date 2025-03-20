@@ -7,7 +7,9 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
-import Loading from "@/components/loading"
+import Loading from "@/components/Loading"
+import { RoomIdProvider } from '@/context/RoomIdContext';
+import { UserIdProvider } from '@/context/UserIdContext';
 
 
 const inter = Inter({ subsets: ["latin"] })
@@ -45,15 +47,18 @@ export default function RootLayout({
     };
   }, [router]);
 
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+  return (<html>
+    <body>
+    <RoomIdProvider>
+      <UserIdProvider>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           {loading && <Loading />}
           <main>{children}</main>
           <Toaster />
         </ThemeProvider>
-      </body>
+      </UserIdProvider>
+    </RoomIdProvider>
+    </body>
     </html>
   )
 }
