@@ -47,8 +47,8 @@ export default function RootLayout({
     };
   }, [router]);
 
-  return (<html>
-    <body>
+  return (<html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
     <RoomIdProvider>
       <UserIdProvider>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>

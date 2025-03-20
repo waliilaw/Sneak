@@ -13,9 +13,6 @@ export default function Home() {
   const privateRoom =() => {
     router.push('/privateroom')
   }
-
-
-
   return(
     <main className="flex min-h-screen flex-col items-center justify-center p-4 relative dark:bg-[#06D6A0] overflow-hidden">
     <div className="absolute top-4 right-4">
@@ -26,7 +23,7 @@ export default function Home() {
     </div> */}
 
     <div className="w-full flex flex-col items-center gap-8">
-<img src="at.png" alt="attherate" className="w-64 "/>
+
     <h1 className="text-9xl md:text-[11rem] font-bold text-[#06D6A0] dark:text-light-yellow tracking-tight ">Sneak</h1>
 
       <Button

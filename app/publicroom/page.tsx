@@ -42,21 +42,21 @@ router.push('/publicchat')
           <div className="glass p-6 rounded-full w-full space-y-4 dark:bg-transparent border-none">
             <Button
               onClick={handleJoinRoom}
-              className="rounded-full w-full border bg-trasparent border-black text-black hover:bg-emerald/90 dark:bg-white dark:text-black dark:hover:bg-black/40 dark:border-black"
+              className="rounded-full w-full border bg-black border-black text-light-yellow hover:bg-emerald/90 dark:bg-white dark:text-black dark:hover:bg-black/40 dark:border-black"
             
             >
               AI ChatRoom
             </Button>
             <Button
               onClick={handleJoinRoom}
-              className="rounded-full w-full border bg-trasparent border-black text-black hover:bg-emerald/90 dark:bg-white dark:text-black dark:hover:bg-black/40 dark:border-black"
-            
+              className="rounded-full w-full border bg-black border-black text-light-yellow  hover:bg-emerald/90 dark:bg-white dark:text-black dark:hover:bg-black/40 dark:border-black"
+          
             >
               Human Room
             </Button>
             <Button
               onClick={handleJoinRoom}
-              className="rounded-full w-full border bg-trasparent border-black text-black hover:bg-emerald/90 dark:bg-white dark:text-black dark:hover:bg-black/40 dark:border-black"
+              className="rounded-full w-full border bg-black border-black text-light-yellow hover:bg-emerald/90 dark:bg-white dark:text-black dark:hover:bg-black/40 dark:border-black"
             >
               Hybrid Room
             </Button>
