@@ -16,10 +16,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/privateroom/page.js"
     ],
-    "/publicroom/page": [
+    "/privatechat/loading": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/publicroom/page.js"
+      "static/chunks/app/privatechat/loading.js"
+    ],
+    "/privatechat/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/privatechat/page.js"
     ]
   }
 }

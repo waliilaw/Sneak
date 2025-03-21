@@ -1,5 +1,4 @@
 {
-  "/publicroom/page": "app/publicroom/page.js",
-  "/privateroom/page": "app/privateroom/page.js",
-  "/page": "app/page.js"
+  "/privatechat/page": "app/privatechat/page.js",
+  "/privateroom/page": "app/privateroom/page.js"
 }

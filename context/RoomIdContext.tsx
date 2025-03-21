@@ -1,21 +1,30 @@
 import React, { createContext, useContext, useState } from 'react';
 
-const RoomIdContext : any = createContext(undefined);
+interface RoomIdContextType {
+    currentRoomId: string;
+    setCurrentRoomId: (id: string) => void;
+}
 
-export const RoomIdProvider : any  = ({ children } : any ) => {
-  const [roomId, setRoomId] = useState(undefined);
+const RoomIdContext = createContext<RoomIdContextType | undefined>(undefined);
 
-  return (
-    <RoomIdContext.Provider value={{ roomId, setRoomId }}>
-      {children}
-    </RoomIdContext.Provider>
-  );
+interface RoomIdProviderProps {
+    children: React.ReactNode;
+}
+
+export const RoomIdProvider = ({ children }: RoomIdProviderProps) => {
+    const [currentRoomId, setCurrentRoomId] = useState<string>('');
+
+    return (
+        <RoomIdContext.Provider value={{ currentRoomId, setCurrentRoomId }}>
+            {children}
+        </RoomIdContext.Provider>
+    );
 };
 
 export const useRoomId = () => {
-  const context = useContext(RoomIdContext);
-  if (!context) {
-    throw new Error('useRoomId must be used within a RoomIdProvider');
-  }
-  return context;
-}; 
+    const context = useContext(RoomIdContext);
+    if (!context) {
+        throw new Error('useRoomId must be used within a RoomIdProvider');
+    }
+    return context;
+};
